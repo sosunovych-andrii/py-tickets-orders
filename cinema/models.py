@@ -113,7 +113,7 @@ class Ticket(models.Model):
             row=self.row,
             seat=self.seat,
             movie_session=self.movie_session,
-            raise_exception=ValueError
+            raise_exception=ValidationError
         )
 
     def save(
